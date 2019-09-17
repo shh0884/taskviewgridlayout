@@ -1,20 +1,11 @@
-      browser.tabs.onActivated.addListener(function() {
-     
-      var taskviewFunction4 = function() {
-      var layoutTBox = document.getElementById('calendar-task-box');
-      var LayoutTBox = browser.tabs.executeScript( {
-          code: layoutTBox
-      });
-      var layoutContainer = document.getElementById('calendar-task-details-container');
-      var LayoutContainer = browser.tabs.executeScript({
-         code: layoutContainer
-      });
-      var layoutDeck = document.getElementById('calendarDisplayDeck');
-      var LayoutDeck = browser.tabs.executeScript({
-         code: layoutDeck
-      });
-      LayoutTBox.appendChild = LayoutContainer;
-      var flex = 'LayoutDeck{flex: 1 }';
-      LayoutDeck.insertCSS = flex;}
+browser.tabs.onActivated.addListener(function() {
 
+var insertBefore = 'document.getElementById('calendar-task-box').insertBefore(document.getElementById('calendar-task-details-container'),document.getElementById('task-addition-box'))';
+var InsertBefore = browser.tabs.executeScript({
+         code: 'insertBefore'
+});
+var deckStyle1 = 'document.getElementById('calendarDisplayDeck').style.flex = '1'';
+var DeckStyle1 = browser.tabs.executeScript({
+         code: 'deckStyle1'
+});
 };
