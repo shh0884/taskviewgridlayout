@@ -1,15 +1,12 @@
-var appendChild = window.document.getElementById('calendar-task-box').appendChild(document.getElementById('calendar-task-details-container'));
+browser.menus.onClicked.addListener((info, tab) => {
+var appendChild = document.getElementById('calendar-task-box').appendChild(document.getElementById('calendar-task-details-container'));
 var AppendChild = browser.tabs.executeScript({
 code: 'appendChild'
 });
-var deckStyle = document.getElementById('calendarDisplayDeck').style.flex = '1';
-var DeckStyle = browser.tabs.executeScript({
-code: 'deckStyle'
+var deckStyle2 = document.getElementById('calendarDisplayDeck').style.flex = '1';
+var DeckStyle2 = browser.tabs.executeScript({
+code: 'deckStyle2'
 });
-
-var ButtonListener2 = 'document.querySelector('taskview2').addEventListener('click', function() {AppendChild; DeckStyle;})';
-var ButtonLIstener2 = browser.tabs.executeScript({
-code: 'ButtonLIstener2'
+ AppendChild;
+ DeckStyle2;
 });
-   
-      ButtonLIstener2.then();
