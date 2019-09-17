@@ -10,28 +10,19 @@
     body {
         background-color:black;
     }
-    #taskview1 {
-        background-color:black;
-    }
-    #taskview2 {
-        background-color:black;
-    }
-    #taskview3 {
-        background-color:black;
-    }
-    #taskview1 > button {
+    .button1 {
         background-color:blue;
         color:white;
         font-weight: bold;
         width: 300px;
     }
-    #taskview2 > button {
+    .button2 {
         background-color:green;
         color:white;
         font-weight: bold;
         width: 300px;
     }
-    #taskview3 > button {
+    .button3 {
         background-color:red;
         color:white;
         font-weight: bold;
@@ -41,14 +32,20 @@
   </head>
 
 <body>
-    <form action="" method="get" id="taskview1" rel="taskviewlayout1.js">
-    <button type="submit" form="taskview1">View to put task view up</button>
-</form>
-    <form action="" method="get" id="taskview2" rel="taskviewlayout2.js">
-    <button type="submit" form="taskview2">View to put task view neutrally</button>
-</form>
-    <form action="" method="get" id="taskview3" rel="taskviewlayout3.js">
-    <button type="submit" form="taskview3">View to put task view vertically</button>
-</form>
+<div>
+<button class="button1">View to put task view up</button>
+<script src="taskviewlayout1.js">
+</script>
+</div>
+<div>
+<button class="button2">View to put task view neutrally</button>
+<script src="taskviewlayout2.js">
+</script>
+</div>
+<div>
+<button class="button3">View to put task view vertically</button>
+<script src="taskviewlayout3.js">
+</script>
+</div>
 </body>
 </html>
