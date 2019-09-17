@@ -1,36 +1,15 @@
-browser.menus.onClicked.addListener(function(info, tab) {
-      var button = document.createElement('button');
-      var Button = browser.tabs.executeScript({
-         code: 'button'
-      });      
-      var buttonChild = document.activeElement.appendChild(button);
-      var ButtonChild = browser.tabs.executeScript({
-         code: 'buttonChild'
-      }); 
-      var Taskview3 = Button.setAttribute('id', 'taskview3'); 
-      var taskView3 = browser.tabs.executeScript({
-         code: 'Taskview3'
-      });              
-      if(info.menuItemId === taskView3) {
-      var layoutDeck = document.getElementById('calendarDisplayDeck');
-      var LayoutDeck = browser.tabs.executeScript({
-         code: 'layoutDeck'
-      });
-      var layoutContent = document.getElementById('calendarContent');
-      var LayoutContent = browser.tabs.executeScript({
-         code: 'layoutContent'
-      });
-      var layoutContainer = document.getElementById('calendar-task-details-container');
-      var LayoutContainer = browser.tabs.executeScript({
-         code: 'layoutCotainer'
-      });
-      var flex = 'LayoutDeck{flex: 0 2 0 }';
-      LayoutDeck.insertCSS = flex;
-      var LayoutChild = LayoutContent.appendChild = LayoutContainer;
-      var LayoutCHild = browser.tabs.executeScript({
-         code: 'LayoutCHild'
-      });
-}
+var deckStyle3 = 'document.getElementById('calendarDisplayDeck').style.flex = '0 2 0'';
+var DeckStyle3 = browser.tabs.executeScript({
+         code: 'deckStyle3'
+});
+var appendChild3 = 'document.getElementById('calendarContent').appendChild(document.getElementById('calendar-task-details-container'))';
+var AppendChild3 = browser.tabs.executeScript({
+         code: 'appendChild3'
 });
 
-
+      var ButtonListener3 = 'document.querySelector('taskview3').addEventListener('click', function() {DeckStyle3; AppendChild3;})';
+      var ButtonLIstener3 = browser.tabs.executeScript({
+         code: 'ButtonLIstener3'
+      });
+   
+      ButtonLIstener3.then();
