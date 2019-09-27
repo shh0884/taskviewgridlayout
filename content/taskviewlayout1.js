@@ -1,12 +1,3 @@
-browser.menus.onClicked.addListener((info, tab) => {
-var insertBefore = document.getElementById('calendar-task-box').insertBefore(document.getElementById('calendar-task-details-container'), document.getElementById('task-addition-box'));
-var InsertBefore = browser.tabs.executeScript({
-         code: 'insertBefore'
-});
-var deckStyle1 = document.getElementById('calendarDisplayDeck').style.flex = '1';
-var DeckStyle1 = browser.tabs.executeScript({
-         code: 'deckStyle1'
-});
- InsertBefore;
- DeckStyle1;
-});
+document.getElementById('div1').addEventListener('click', function() {window.addEventListener("DOMContentLoaded", function(event){
+console.log(parent.document.getElementById('calendar-task-box').insertBefore(parent.document.getElementById('calendar-task-details-container')), parent.document.getElementById('calendarDisplayDeck').style.flex = '1')
+})})
