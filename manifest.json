@@ -2,38 +2,37 @@
 	"manifest_version": 2,
              "applications": {
                 "gecko": {
-                   "id": "TaskviewLayout@Sungho.Hwang",
-                   "strict_min_version": "68.0"
+                   "id": "TaskviewGridLayout@Sungho.Hwang",
+                   "strict_min_version": "78.0"
                     }
              },
-	"name": "TaskviewLayout",
-	"version": "55.3",
-	"description": "Layout taskview",
+	"name": "TaskviewGridLayout",
+	"version": "1.8",
+	"description": "",
              "icons": {
-               "32": "icons/taskviewlayout32.png",
-               "16": "icons/taskviewlayout16.png"
+               "32": "tvg32.png"
                  },
-"background": {
-  "scripts": ["content/background.js"]
-},
-"permissions": [
-    "menus",
-    "activeTab",
-  "*://developer.mozilla.org/*",
-  "webRequest",
-  "*://mozilla.org/*",
-  "tabs",
-  "tabHide"
-  ],
 "browser_action": {
-    "default_icon": "icons/taskviewlayout32.png",
-    "default_title": "Taskview layout",
-    "default_popup": "content/taskviewlayout.html"
+    "default_icon": "tvg32.png",
+    "default_title": "TaskviewGridLayout",
+    "default_popup": "popup.html"
   },
-"content_scripts": [
-  {
-    "matches": ["*://*.mozilla.org/*"],
-    "js": ["content/taskviewlayout1.js", "content/taskviewlayout2.js", "content/taskviewlayout3.js", "content/taskviewlayout4.js"]
+"permissions": [
+        ],
+ "experiment_apis": {
+    "myapi": {
+      "schema": "schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "myapi"
+          ]
+        ],
+       "script": "implementation.js"
+      }
   }
-]
+  }
 }
