@@ -5,7 +5,7 @@ Title: TaskviewGridLayout.
 Required addons: Lightning.
 
 Description:
-Taskview grid layout.
+"Taskview grid layout."
 
 January 12th 2021.
 
