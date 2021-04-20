@@ -1,0 +1,31 @@
+#calendar-task-box>vbox {
+  display: var(--display1);
+  width: var(--width1);
+  height: var(--height1);
+  grid-template-areas: var(--grid-template-areas1);
+  grid-template-columns: var(--grid-template-columns1);
+  grid-template-rows: var(--grid-template-rows1);
+}
+
+#calendar-task-box>vbox>#calendar-task-view-splitter {
+  visibility: var(--visibility2);
+}
+
+#calendar-task-box>vbox>#calendar-task-tree {
+  border: var(--border3);
+  width: var(--width3);
+  height: var(--height3);
+  grid-row: var(--grid-row3);
+}
+
+#calendar-task-box>vbox>#calendar-task-details-container {
+  border: var(--border4);
+  width: var(--width4);
+  height: var(--height4);
+  grid-row: var(--grid-row4);
+}
+
+box, .themeable-brighttext, toolbarbutton[class="unifinder-closebutton close-icon"] { 
+    background-color: var(--box-bg) !important;
+    color: var(--box-text) !important;
+};
